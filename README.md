@@ -8,9 +8,6 @@
 
 [💎 Milestones](%F0%9F%92%8E%20Milestones%201bae0364bfc381849d79de7654cb52f1.csv)
 
-## Useful infos
-
-[How to submit a bug or a Feedback](https://www.notion.so/How-to-submit-a-bug-or-a-Feedback-1bae0364bfc38119a87be42acee3ddd5?pvs=21)
 
 ## 🏗 **📌 แผนการพัฒนา**
 
