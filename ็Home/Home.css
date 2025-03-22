@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 10rem auto; 
+}
+
 .blog-header {
     display: flex;
     flex-direction: row;
@@ -11,6 +18,9 @@
     align-items: center;
     padding: 15px;
     background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .logo {
@@ -23,7 +33,8 @@
 .logo img {
     width: 50px;
     height: 50px;
-    margin-left: 10px;
+    margin-left: 150px;
+    cursor: pointer;
 }
 
 .blog-title {
@@ -39,9 +50,15 @@
     text-decoration: none;
     font-family: 'Open Sans', 'helvetica', Arial, Helvetica, sans-serif;
 }
+.nav-link:hover {
+    color: #fc4d50;
+    transform: steps(1.05);
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 .blog-nav{
-    margin: 0 10px;
+    margin: 0 60px;
     color: black;
     justify-content: space-between;
     display: flex;
@@ -58,7 +75,7 @@
     width: 100%;
     max-width: 950px;
     padding: 0 5rem;
-    margin: 4rem auto;
+    margin: 5rem auto;
     box-sizing: border-box;
     font-family: 'Open Sans', 'helvetica', Arial, Helvetica, sans-serif;
 }
@@ -165,11 +182,13 @@
     justify-content: center;
     margin-top: 20px;
     font-family: 'Open sans', sans-serif, Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
 }
 
 .page-button {
     font-size: 16px;
     width: 30px;
+    height: 30px;
     background: #f2f2f2;
     padding: 5px;
     border-radius: 50px;
@@ -182,3 +201,54 @@
     background: #c4c4c4;
     transform: steps(1.05);
 }
+
+.blog-footer {
+    text-align: center;
+    margin: .5rem 0;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    background: #f2f2f2;
+    font-family: 'Open sans', sans-serif,  Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-link img {
+    width: 30px;
+    margin: .5rem .1rem;
+    padding: 0 5px;
+}
+
+.vs-code {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: .6rem;
+}
+.vs-code:hover {
+    color: #fc4d50;
+    transform: steps(1.05);
+    text-decoration: underline;
+}
+
+.github {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: .6rem;
+}
+.github:hover {
+    color: #fc4d50;
+    transform: spets(1.05);
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: .6rem;
+    color: #3c3c3c;
+}
+
+/*# sourceMappingURL=Home.css.map */
