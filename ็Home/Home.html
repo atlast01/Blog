@@ -6,7 +6,8 @@
     <title>Blog</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="icon" href="/About/image/Logo-img.png">
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="Home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
@@ -14,18 +15,31 @@
     <header class="blog-header">
         <div class="logo">
             <img src="/About/image/Logo-img.png" alt="Blog Logo" id="dark-mode">
-            <h1 class="blog-title">At_last Blog</h1>
+            <a href="/็Home/Home.html" class="blog-title-link">
+                <h1 class="blog-title">At_last Blog</h1>
+            </a>
         </div>
         <nav class="blog-nav">
             <div class="nav-link-A">
                 <a href="#" class="nav-link">Archive</a>
                 <a href="/About/About.html" class="nav-link">About</a>
             </div>
-            <a href="#" class="search-img">
+            <div class="search-img">
                 <img src="/็Home/Home-image/search-img.png" alt="Search-img">
-            </a>
+            </div>
         </nav>
+        
     </header>
+
+    <div class="modal" style="display: none;">
+        <div class="modal-content">
+            <br>
+            <p>Search</p>
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+
 
     <main class="blog-list">
         <article class="blog-post">
