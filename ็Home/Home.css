@@ -37,11 +37,28 @@ html, body {
     cursor: pointer;
 }
 
+.blog-title-link {
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+}
+.blog-title-link:hover {
+    color: #fc4d50;
+    transform: steps(1.05);
+}
+
 .blog-title {
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 1.2em;
     font-family: 'Open Sans', 'helvetica', Arial, Helvetica, sans-serif;
+}
+
+.blog-nav {
+    color: #000;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link{
@@ -54,7 +71,6 @@ html, body {
     color: #fc4d50;
     transform: steps(1.05);
     text-decoration: underline;
-    font-weight: bold;
 }
 
 .blog-nav{
@@ -65,11 +81,105 @@ html, body {
     padding-right: 9em;
 }
 
+.search-img {
+    width: 1.9rem;
+    height: 1.9rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .search-img img{
     width: 20px;
     height: 20px;
-    margin: 0 1em;
+    margin: 0 1.5em;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.search-img:hover {
+    transform: steps(1.05);
+    background: #d7d7d7;
+    border-radius: 50%;
+}
+
+/* modal search */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.811);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 950px;
+    padding: 0 5rem;
+    margin: 5rem auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'helvetica', Arial, Helvetica, sans-serif;
+}
+
+.modal-content p {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.search-input {
+    width: 40%;
+    height: 2.3rem;
+    padding: 0 2rem;
+    font-size: .9rem;
+    border: 2px solid #ccc;
+    border-radius: 6rem;
+    margin: .5rem 0;
+    box-sizing: border-box;
+    background: transparent;
+    transition: .3s ease-in-out;
+    color: #ddd;
+}
+.search-input:focus {
+    outline: none;
+    border: 2px solid #fc4d50;
+    transform: steps(1.05);
+    transition: box-shadow .4s ease-in-out;
+}
+
+.cancel-button {
+    margin: .5rem .5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: .45rem .6333333333rem;
+    font-size: 1rem;
+    border-radius: 6rem;
+    border: 2px solid #ffffff;
+    line-height: 1 !important;
+    background-color: rgb(255, 255, 255);
+    font: 500 1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.cancel-button:hover {
+    background: rgba(255,255,255,0.9);
+    color: #222;
+    transform: steps(1.5);
+}
+.cancel-button:focus {
+    outline: none;
+    background: #fc4d50;
+    border: 1px solid #db9d9e;
+}
+
+/* end modal search */
+/* blogs list */
 
 .blog-list {
     width: 100%;
